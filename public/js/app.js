@@ -38,23 +38,27 @@ nums.forEach(number => {
 let result
 plus.addEventListener("click", () => {
     sign = "+"
+    display.textContent = sign
 })
 
 
 minus.addEventListener("click", () => {
     sign = "-"
     result = num1 - num2;
+    display.textContent = sign
 
 })
 
 multi.addEventListener("click", () => {
     sign = "*"
     result = num1 * num2;
+    display.textContent = sign
 })
 
 division.addEventListener("click", () => {
     sign = "/"
     result = num1 / num2;
+    display.textContent = sign
 })
 
 equal.addEventListener("click", () => {
