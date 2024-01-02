@@ -11868,7 +11868,10 @@ main {
   padding: 5%;
   height: 50%;
   width: 50vw;
-  background-color: rgb(195, 212, 212);
+  display: flex;
+  flex-direction: column;
+  gap: 1vh;
+  box-shadow: 0 0 5px rgb(255, 1, 111);
 }
 main .numDisplay {
   height: 25%;
@@ -11877,7 +11880,7 @@ main .numDisplay {
   justify-content: end;
   padding-right: 30px;
   align-items: center;
-  border-radius: 5px;
+  border: 1px solid black;
 }
 main .keys {
   height: 75%;
@@ -11889,9 +11892,14 @@ main .keys .firstPart {
   height: 20%;
 }
 main .keys .firstPart .sign-box {
-  background-color: #ffffff;
+  background-color: #100007;
+  color: whitesmoke;
   width: 25%;
   border: 1px black solid;
+}
+main .keys .firstPart .sign-box:hover {
+  box-shadow: 0 0 5px 2px rgb(255, 1, 111);
+  z-index: 1;
 }
 main .keys .sndPart {
   height: 80%;
@@ -11906,9 +11914,14 @@ main .keys .sndPart .nums {
   width: 80%;
 }
 main .keys .sndPart .nums .num-box {
-  background-color: #ffffff;
+  background-color: #100007;
+  color: whitesmoke;
   width: 25%;
   border: 1px black solid;
+}
+main .keys .sndPart .nums .num-box:hover {
+  box-shadow: 0 0 5px 2px rgb(255, 1, 111);
+  z-index: 1;
 }
 main .keys .result {
   width: 26.7%;
@@ -11917,7 +11930,28 @@ main .keys .result .result-box {
   border: 1px black solid;
   width: 100%;
   height: 100%;
-  background-color: #ffffff;
+  background-color: #100007;
+  color: whitesmoke;
+}
+main .keys .result .result-box:hover {
+  box-shadow: 0 0 5px 2px rgb(255, 1, 111);
+  z-index: 1;
+}
+
+main:hover {
+  box-shadow: 0 0 5px rgb(255, 1, 111), 0 0 25px rgb(255, 1, 111), 0 0 50px rgb(255, 1, 111), 0 0 100px rgb(255, 1, 111), 0 0 100px rgb(255, 1, 111);
+  transition: 0.3s;
+}
+
+.dot-box {
+  background-color: #100007;
+  color: whitesmoke;
+  width: 25%;
+  border: 1px black solid;
+}
+.dot-box:hover {
+  box-shadow: 0 0 5px 2px rgb(255, 1, 111);
+  z-index: 1;
 }
 
 /*# sourceMappingURL=app.css.map */
